@@ -7,6 +7,9 @@ df = pd.read_csv('stats.csv')
 x = df['time']
 y1 = df['firstCheckout']
 y2 = df['secCheckout']
-plt.plot(x, y1, c='r', label='l1');
-plt.plot(x, y2, c='g', label='l2');
+plt.xlabel("Simulation time")
+plt.ylabel("Number of customers")
+plt.plot(x, y1, c='r', label='firstCheckout')
+plt.plot(x, y2, c='g', label='secCheckout')
+plt.legend()
 plt.show()
